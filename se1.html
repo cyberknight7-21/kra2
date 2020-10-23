@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Cyber Knights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase.js"></script>
+
+<style>
+ .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+ 
+</style>
+</head>
+<body>
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="https://script.google.com/macros/s/AKfycby2cGdiSBkY4_NxbLo50oN4_sZVSViKLqI9b1Naugun6DhMFjfa/exec">Login</a>
+  <a href="https://www.google.com">About Us</a>
+</div>
+
+  
+  
+  
+<br>
+
+
+<div class="container">
+  <h1>K.R.A SE1 Data Update
+</h1><br><br>
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgR4AWzn8OAL9u0J29HYE0TjVnij26ALH1p1cIrgvlsgob4w/viewform?edit2=2_ABaOnueBox5LmPb6xNnOdAjns0LvtjiriGohh9MG5v8TMMuzVV1bXC0RzHz2JvsiPsWBBvE
+" width="380" height="2800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+  
+  <h1>Password Update
+ 
+  <br><br>
+  
+</h1><br><br>
+  <h4> <input type="text"  class="cen" name="pass" id="pass" /></input>
+  <br>
+  :&nbsp;&nbsp;<input type="button" class="button" value="Update" onclick="update_user();" /><h4>
+<script>
+
+//sticky
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+ 
+ 
+    // Initialize Firebase
+    var firebaseConfig = {
+    apiKey: "AIzaSyAn4SHwDb3odEvsVCA5HImagwMAP8zOW9o",
+    authDomain: "charged-ridge-234713.firebaseapp.com",
+    databaseURL: "https://charged-ridge-234713.firebaseio.com",
+    projectId: "charged-ridge-234713",
+    storageBucket: "charged-ridge-234713.appspot.com",
+    messagingSenderId: "226231639060",
+    appId: "1:226231639060:web:62c6bd0fc22d57dcb79b01",
+    measurementId: "G-34WR5SVPMW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+
+
+function update_user(){
+   var pass = document.getElementById('pass').value;
+   
+   var data = {
+    pass: pass,
+    
+   }
+   
+   console.log(data)
+   //update data
+   var updates = {};
+   updates['/passwords/1/'] = data;
+   firebase.database().ref().update(updates);
+   
+   alert('The Password is updated successfully!');
+   
+   
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</script>
+</body>
+</html>
