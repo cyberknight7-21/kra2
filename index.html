@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Cyber Knights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<style>
+ 
+</style>
+</head>
+<body>
+
+
+
+
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="https://www.google.com">About Us</a>
+</div>
+<br>
+<br>
+
+
+  <img id="img2" src="head.gif" alt="dam" width="100" height="1000">
+  
+  
+  
+  
+  
+
+
+
+<div class="container">
+
+<h1><font size="6" color="63D768"> Key Result Area Monitaring </font></h1>
+   
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary button2" data-toggle="modal" data-target="#myModal1" style="vertical-align:middle">
+   <span><h6>Water Resource Department<h6> </span>
+  </button>
+  
+  
+ <a href="div1.html"><button type="button" class="button"  style="vertical-align:middle" >
+   <span> <font color="white">GMIDC- Aurangabad
+</font> </span>
+  </button> </a>
+    <a href="div2.html"><button type="button" class="button"  style="vertical-align:middle" >
+   <span><font color="white"> MKVDC-Pune
+</font></span>
+  </button> </a>
+   <a href="div3.html"><button type="button" class="btn btn-primary button"  style="vertical-align:middle" >
+   <span> <font color="white"> KIDC- Thane 
+</font></span> </a>
+  </button>
+   <a href="div4.html"> <button type="button" class="btn btn-primary button"  style="vertical-align:middle" >
+   <span><font  color="white">TIDC- Jalgaon 
+</font> </span></a>
+  </button>
+   <a href="div5.html"> <button type="button" class="btn btn-primary button"  style="vertical-align:center" >
+   <span> <font  color="white"> VIDC- Nagpur 
+</font></span>
+  </button> </a>
+
+  <button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#myModal1" style="vertical-align:middle">
+   <span> <font color="white"> MERI- Nashik 
+
+
+</font>  </span>
+  </button>
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title"><font Color="black">Total ( WRD )</font></h1>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+ 
+ 
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/1VEYeOKqWjybFDDrgg1BKfB5XSTQaIhaIZWP197JpMwc/htmlembed/sheet?gid=390909947"></iframe>
+  
+  
+  
+
+        </div>
+		
+		
+		 <a href="https://docs.google.com/spreadsheets/d/17L4HHgYYdqUcOyrhCMKRk444NxfVusBIGoN_FU3l7S8/export?format=xlsx&gid=0">   <button type="button" class="btn btn-primary buttond" data-toggle="modal" data-target="#myModal1" style="vertical-align:left">
+   <span> Download Report
+   </span>
+  </button></a>
+  
+  
+  
+  
+  
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+</div><br><br><br><br>
+<script>
+
+//sticky
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// tree viewport
+
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+
+
+    
+</script>
+</body>
+</html>

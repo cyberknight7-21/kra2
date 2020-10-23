@@ -1,0 +1,94 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Web login </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login . You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+	
+
+<p> Column 1</P>
+ <table>
+  <tr>
+   <td>ID </td>
+   <td><input type="text" name="id" id="id" /></td>
+  </tr>
+  <tr>
+   <td>KRA </td>
+   <td><input type="text" name="col1t" id="aiic" /></td>
+  </tr>
+  <tr>
+   <td>Total Work </td>
+   <td><input type="text" name="col1t2" id="aiictw" /></td>
+  </tr>
+  
+  <tr>
+   <td> Work Achived </td>
+   <td><input type="text" name="id" id="aiicwa" /></td>
+  </tr>
+  <tr>
+  <tr>
+  <tr>
+   <td>Percentage </td>
+   
+  </tr>
+  <tr>
+ 
+  
+  <tr>
+   <td colspan="2">
+   
+    <input type="button" value="Update" onclick="update_user();" />
+    <input type="button" value="Delete" onclick="delete_user();" />
+   </td>
+  </tr>
+ </table>
+ 
+ <h3>Work List</h3>
+ 
+ <table id="tbl_users_list" border="1">
+  <tr>
+   <td>ID</td>
+   <td>KRA</td>
+   <td>total work</td>
+    <td>Achived work</td>
+	<td>Percentage</td>
+	 
+  </tr>
+ </table>
+  
+</div>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+    apiKey: "AIzaSyAn4SHwDb3odEvsVCA5HImagwMAP8zOW9o",
+    authDomain: "charged-ridge-234713.firebaseapp.com",
+    databaseURL: "https://charged-ridge-234713.firebaseio.com",
+    projectId: "charged-ridge-234713",
+    storageBucket: "charged-ridge-234713.appspot.com",
+    messagingSenderId: "226231639060",
+    appId: "1:226231639060:web:62c6bd0fc22d57dcb79b01",
+    measurementId: "G-34WR5SVPMW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
